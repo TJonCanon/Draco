@@ -11,16 +11,14 @@ body {
 }
 
 .container-bkgd{
-    width: 100%;
-    min-height: 100vh;
     background-image: linear-gradient(rgba(168, 70, 40, 0.65), rgba(168, 70, 40, 0.65)), url(images/background.jpg);
     background-size: cover;
-    background-position: center;
+    background-position: center center;
     padding: 10px 8%;
 }
 
-.logo{
-    width: 180px;
+.logo img {
+    width: 5rem;
     cursor: pointer;
 }
 
