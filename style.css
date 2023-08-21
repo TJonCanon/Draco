@@ -8,45 +8,41 @@ body {
     padding: 0;
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
+    width: 100%;
 }
 
 .container-bkgd{
     background-image: linear-gradient(rgba(168, 70, 40, 0.65), rgba(168, 70, 40, 0.65)), url(images/background.jpg);
     background-size: cover;
-    background-position: center center;
-    padding: 10px 8%;
+    height: 100vh;
+    align-items: flex-start;
 }
 
 .logo img {
-    width: 5rem;
     cursor: pointer;
 }
 
-nav{
-    width: 100%;
-    display: flex;
+.simple-navbar {
+    display: flex;          /* Aligjustify-conn elements in a row */
     align-items: center;
-    justify-content: space-between;
-    padding: 10px 0;
 }
 
-nav ul{
-    list-style: none;
-    width: 100%;
-    text-align: right;
-    padding-right: 60px;
+.simple-navbar ul {
+    list-style-type: none;
 }
 
-nav ul li{
-    display: inline-block;
-    margin: 10px 20px;
+
+.navbar-list li {
+    margin-left: 2.5rem;
 }
-nav ul li a{
+
+
+.navbar-list a{
     color: #fff;
     text-decoration: none;
 }
 
-.btn{
+.btn {
     display: flex;
     align-items: center;
     padding: 10px 20px;
@@ -56,6 +52,7 @@ nav ul li a{
     background: #993333;
     color: #fff;
     cursor: pointer;
+    margin-left: 5rem;
 }
 
 .btn img{
