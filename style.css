@@ -6,9 +6,12 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
     width: 100%;
+}
+
+.impt-text {
+    font-family: MagicSchoolOne, sans-serif;
 }
 
 .container-bkgd{
@@ -58,12 +61,6 @@ body {
 .btn img{
     width: 20px;
     margin-right: 10px;
-}
-
-.content{
-    margin-top: 14%;
-    color: #fff;
-    max-width: 620px;
 }
 
 .content h1{
