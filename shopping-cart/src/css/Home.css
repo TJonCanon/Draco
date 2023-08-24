@@ -1,0 +1,493 @@
+.wrapper{
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+/* navbar */
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    justify-content: space-between;
+    width: 100%;
+    background-color: black;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    padding: 0px;
+}
+
+nav button {
+    margin: 1px 5px;
+    border: none;
+    color: white;
+    background-color: black;
+    padding: 5px;
+}
+.cart-icon-css{
+    color: white;
+}
+
+.cart-btn {
+    display: flex;
+    align-items: center;
+    padding: 10px
+}
+
+.cart-btn img {
+    width: 30px;
+    height: fit-content;
+}
+
+.cart-icon-css{
+    background-color: rgba(168, 70, 40);
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    position: relative;
+    top: 3px;
+    right: 8px;
+}
+
+.profile-icon{
+    width: 30px;
+    padding-right: 10px;
+}
+
+.signup-container {
+    display: flex;
+    justify-content: center;
+    padding-top:100px;
+}
+
+.signup-form{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 10px;
+    width: 350px;
+}
+
+.signup-form p {
+    font-size: 30px;
+}
+
+.signup-form label {
+    padding: 0px;
+    margin-top: 16px;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.signup-form input {
+    margin: 2px 0px;
+    border-radius: 5px;
+    padding: 5px;
+    border: 2px solid grey;
+    font-size: 18px;
+}
+
+.signup-form input:focus{
+    outline: 2px solid rgba(168, 70, 40);
+    margin: 20px 0px;
+}
+
+.signup-form button {
+    background-color: rgba(168, 70, 40);
+    margin: 20px 0px;
+    border: none;
+    font-size: 20px;
+    color: white;
+    font-weight: 600;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.signup-form button:hover {
+    background: black;
+    color: rgba(168, 70, 40);
+    cursor: pointer;
+}
+
+.success-msg {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    color: green;
+}
+
+.error-msg {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    background-color: white;
+    color: red;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    padding-top:100px;
+}
+
+.login-form{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 10px;
+    width: 350px;
+}
+
+.login-form p {
+    font-size: 30px;
+}
+
+.login-form label {
+    padding: 0px;
+    margin-top: 16px;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.login-form input {
+    margin: 2px 0px;
+    border-radius: 5px;
+    padding: 5px;
+    border: 2px solid grey;
+    font-size: 18px;
+}
+
+.login-form input:focus{
+    outline: 2px solid rgba(168, 70, 40);
+    margin: 20px 0px;
+}
+
+.login-form button {
+    background-color: rgba(168, 70, 40);
+    margin: 20px 0px;
+    border: none;
+    font-size: 20px;
+    color: white;
+    font-weight: 600;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.login-form button:hover {
+    background: black;
+    color: rgba(168, 70, 40);
+    cursor: pointer;
+}
+
+.success-msg {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    color: green;
+}
+
+.error-msg {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    background-color: white;
+    color: red;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.logout-btn{
+    background-color:  rgba(168, 70, 40);
+    border-radius: 10px;
+}
+.logout-btn:hover {
+    background-color: white;
+    color:  rgba(168, 70, 40);
+    cursor: pointer;
+}
+
+.LeftContainer img{
+    width: 100px;
+}
+
+.userprofile-outercontainer {
+    display: flex;
+    margin-top: 200px;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-profile{
+    background-color: rgba(168, 70, 40);
+    padding: 10px;
+    border-radius: 10px;
+    width: 500px;
+}
+
+.addprod-container{
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+.addprod-form {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 10px;
+    border: 1px solid white;
+    border-radius: 10px;
+    width: 600px;
+}
+
+.addprod-form p {
+    font-size: 25px;
+    margin: 0px;
+}
+
+.addprod-form label {
+    padding: 0px;
+    margin-top: 5px;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.addprod-form input {
+    margin: 2px 0px;
+    border-radius: 5px;
+    padding: 5px;
+    border: 2px solid grey;
+    font-size: 13px;
+}
+
+.addprod-form textarea {
+    margin: 2px 0px;
+    border-radius: 5px;
+    padding: 5px;
+    border: 2px solid grey;
+    font-size: 13px;
+}
+
+.addprod-form input:focus {
+    outline: 2px solid rgba(168, 70, 40);
+    border: none;
+}
+
+.addprod-form button {
+    background-color: rgba(168, 70, 40);
+    margin: 10px 0px;
+    border: none;
+    font-size: 15px;
+    color: white;
+    font-weight: 600;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.addprod-form button:hover {
+    background-color: black;
+    color: rgba(168, 70, 40);
+    cursor: pointer;
+}
+
+.success-msg {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    background: rgb(229, 255, 228);
+    padding: 10px;
+    border-radius: 10px;
+    color: green;
+}
+
+.error-msg {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    background-color: rgb(255,228,228);
+    color: red;
+    padding: 10px;
+    border-radius:10px;
+}
+
+.product-types {
+    background-color: rgba(168, 70, 40);
+    display: flex;
+    justify-content: center;
+}
+
+.product-types button {
+    background-color: black;
+    padding: 0px 5px;
+    margin: 8px 15px;
+    border: 2px solid white;
+    color: white;
+    border-radius: 5px;
+    font-size: 13px;
+}
+
+.product-types button:hover {
+    background-color: white;
+    color: rgba(168, 70, 40);
+    font-weight: 600;
+}
+
+.allproductpage .heading{
+    background-color: rgb(240, 240, 240);
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.allproductpage .heading p {
+    font-size: 50px;
+}
+
+.allproductpage .allproductcontainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.product-container {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    margin: 5px;
+    width: 500px;
+    border: 1px solid rgb(245,245,245);
+    box-shadow: 0px 0px 5px 0px grey;
+    padding: 10px;
+    align-items: center;
+    height:300px;
+}
+
+.product-container img {
+    height: fit-content;
+    width: fit-content;
+    max-height: 250px;
+    margin: 2px;
+}
+
+.product-details {
+    width: 70%;
+}
+
+.producttitle {
+    font-size: 35px;
+    font-weight: 600;
+    background-color: white;
+    color: black;
+    border: none;
+}
+
+.producttitle:hover {
+    cursor: pointer;
+    color: rgba(168, 70, 40);
+}
+
+.price-container {
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+    flex-direction: column;
+}
+
+.mrp{
+    display: flex;
+    margin: 0px;
+    line-height: 0px;
+    padding: 5px;
+}
+
+.buy-cart .btn {
+    background-color: white;
+    color: rgba(168, 70, 40);
+    border: 2px solid rgba(168, 70, 40);
+    padding: 5px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.buy-cart .btn:hover {
+    background-color: black;
+    color: rgba(168, 70, 40);
+}
+
+.showmore-btn {
+    background-color: white;
+    color: rgba(168, 70, 40);
+    border: 2px solid rgba(168, 70, 40);
+    padding: 5px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.showmore-btn .btn:hover {
+    background-color: black;
+    color: rgba(168, 70, 40);
+    border: 2px solid rgba(168, 70, 40);
+    padding: 5px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+/* specific-product-page */
+
+.myprod-container {
+    display: flex;
+}
+
+.prod-img-cont {
+    width: 2000px;
+    margin-right: 20px;
+}
+
+.prod-img-cont img {
+    width: 100%;
+}
+
+.prod-data .prod-head {
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 45px;
+}
+
+.price {
+    font-size: 25px;
+    margin: 15px 0px;
+    padding: 0px;
+}
+
+.prod-details-head {
+    padding: 0px;
+    font-size: 35px;
+    margin: 0px;
+    margin-top: 20px;
+
+    color: rgb(168, 70, 40);
+    border-bottom: rgb(168, 70, 40);
+    width: 110px;
+}
+
+.buy-cart {
+    margin-left: 0px;
+}
