@@ -22,12 +22,12 @@ export class App extends Component {
           <Route path = '/cart' element={<Cart />} />
           <Route path = '/userprofile' element={<UserProfile />} />
           <Route path = '/sellproducts' element={<AddProducts />} />
-          <Route path = '/product-types/elixers'element={<Allproductpage type={'Elixers'} />}/>
+          <Route path = '/product-types/elixirs'element={<Allproductpage type={'Elixirs'} />}/>
           <Route path = '/product-types/topicals'element={<Allproductpage type={'Topicals'} />}/>
           <Route path = '/product-types/herbs'element={<Allproductpage type={'Herbs'} />}/>
           <Route path = '/product-types/accessories'element={<Allproductpage type={'Accessories'} />}/>
           <Route path = '/product/:producttype/:id' element={<Specificproductpage/>} />
-
+          <Route path = '/cartdata' element={<Cart />} />
           <Route path = '*' element={<pgFOF />} />       
         </Routes>
       </BrowserRouter>

@@ -96,7 +96,8 @@ export const AddProducts = () => {
                         
                         <label>Product Type</label>
                         <select name ="product-types" onChange={(e)=>{setProductType(e.target.value)}} placeholder="Type of Product">
-                            <option value="elixers">Elixers</option>
+                            <option value="chooseone">Product Type</option>
+                            <option value="elixirs">Elixirs</option>
                             <option value="topicals">Topicals</option>
                             <option value="herbs">Herbs</option>
                             <option value="accessories">Accesories</option>

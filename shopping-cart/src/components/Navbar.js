@@ -38,6 +38,23 @@ export const Navbar = () => {
             navigate("/login")
         })
     }
+
+    const [cartdata,setcartdata] = useState([]);
+    if (loggeduser) {
+        const getcartdata = async () => {
+            const cartArray = [];
+            const path = `cart-${loggeduser[0].uid}`
+            getDocs(collection(db, path)).then((querySnapshot) => {
+                querySnapshot.forEach((doc) => {
+                    cartArray.push({...doc.data(), id: doc.id})
+                });
+                setcartdata(cartArray)
+            }).catch('Error error error')
+        }
+        getcartdata()
+    }
+
+
     return (
         <div>
             <div className='navbar'>           
@@ -56,23 +73,23 @@ export const Navbar = () => {
                         </nav>}
 
                         {loggeduser && 
-                        <nav>
-                            <Link to='/'><button>Home</button></Link>
-                            <Link to='/sellproducts' ><button>Sell</button></Link>
-                            <div className='cart-btn'>
-                                <img src={cart} alt="no img" />
-                                <span className='cart-icon-css'>{loggeduser[0].cart}</span>
-                            <Link to="/userprofile">
-                                <img src={profile} className='profile-icon' />
-                            </Link>
-                            <button className='logout-btn' onClick={handleLogout}>Logout</button>
-                            </div>
-                        </nav>
+                            <nav>
+                                <Link to='/'><button>Home</button></Link>
+                                <Link to='/sellproducts' ><button>Sell</button></Link>
+                                <div className='cart-btn'>
+                                    <Link to ='/cartdata'><img src={cart} alt="no img" /></Link>
+                                    <button className='cart-icon-css'>{cartdata.length}</button>
+                                <Link to="/userprofile">
+                                    <img src={profile} className='profile-icon' />
+                                </Link>
+                                <button className='logout-btn' onClick={handleLogout}>Logout</button>
+                                </div>
+                            </nav>
                         }
                 </div>
             </div>
             <div className='product-types'>
-                <a href='/product-types/elixers'><button>Elixers</button></a>
+                <a href='/product-types/elixirs'><button>Elixirs</button></a>
                 <a href='/product-types/topicals'><button>Topicals</button></a>
                 <a href='/product-types/herbs'><button>Herbs</button></a>
                 <a href='/product-types/accessories'><button>Accessories</button></a>

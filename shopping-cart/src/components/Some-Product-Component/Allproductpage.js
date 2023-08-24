@@ -28,10 +28,6 @@ export const Allproductpage = (props) => {
     return (
         <div className="allproductpage">
             <Navbar />
-            <div className="heading">
-                <p>Top Results for {props.type}</p>
-            </div>
-
             <div className="allproductcontainer">
                 {products.map((product) => (
                     <Productcontainer 

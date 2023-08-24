@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { Navbar } from '../Navbar'
 import { useParams } from 'react-router-dom'
 import { auth, db } from '../../config/Config'
+import './Specificproductpage.css'
 import { doc, getDoc, collection, query, where, getDocs, addDoc } from 'firebase/firestore'
 
 
@@ -65,27 +66,20 @@ export const Specificproductpage = () => {
     return (
         <div>
             <Navbar />
-            {product ? <div className='myprod-container'>
-                <div className='prod-img-cont'>
+            {product ? <div className='product'>
+                <div className='product-img'>
                     <img src={product.productimage}/>
                 </div>
-                <div className='prod-data'>
-                    <p className='prod-head'>{product.producttitle}</p>
-                </div>
-                <div className='specific-price-container'>
-                    <p className='price'>${product.price}</p>
-                </div>
-
-                <p className='prod-details-head'>Details</p>
-                <p className='prod-description'>{product.description}</p>
-                <div className='row-cont'>
-                    <div className='buy-cart'>
-                        <button className='btn'>Buy Now</button>
-                        <button className='btn' onClick={addtocart}>Add to Cart</button>
+                <div className='product-listing'>
+                    <div className='content'>
+                        <h1 className='name'>{product.producttitle}</h1>
+                        <p className='info'>{product.description}</p>
+                        <p className='price'>${product.price}</p>
+                        <div className='btn-and-rating-box'>
+                            <button className='btn' onClick={addtocart}>Add to Cart</button>
+                        </div>
                     </div>
                 </div>
-
-
             </div> : <div>Loading...</div>}
         </div>
     )

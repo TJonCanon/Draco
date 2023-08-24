@@ -19,9 +19,6 @@ export const Productcontainer = (product) => {
             </div>
             <div>
             </div>
-            <a hreff={`/product/${p.producttype}/${p.id}`}>
-                <button className="showmore-btn">More Details &gt;</button>
-            </a>
         </div>
     </div>
   )

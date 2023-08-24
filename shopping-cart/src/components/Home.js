@@ -34,7 +34,6 @@ export const Home = () => {
     return (
         <div className='wrapper'>
             <Navbar />
-            {/* <Banner /> */}
             <Products />
             <p>{loggeduser ? loggeduser[0].email : "no data"}</p>
         </div>
