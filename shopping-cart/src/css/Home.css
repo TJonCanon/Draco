@@ -442,7 +442,7 @@ nav button {
 }
 
 .showmore-btn .btn:hover {
-    background-color: black;
+    background-color: white;
     color: rgba(168, 70, 40);
     border: 2px solid rgba(168, 70, 40);
     padding: 5px;
