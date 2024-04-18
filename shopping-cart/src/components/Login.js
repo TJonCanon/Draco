@@ -3,7 +3,7 @@ import { Navbar } from './Navbar'
 import { Link } from 'react-router-dom'
 import { getAuth, signInWithEmailAndPassword } from "firebase/auth"
 import { useNavigate } from 'react-router-dom'
-
+// this is the login component
 export const Login = () => {
   const [password, setPassword] = useState("");
   const [email, setEmail] = useState("");

@@ -5,7 +5,7 @@ import { createUserWithEmailAndPassword } from 'firebase/auth'
 import { auth, db } from '../config/Config'
 import { collection, addDoc } from 'firebase/firestore'
 
-
+// this is the signup component
 export const Signup = () => {
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");

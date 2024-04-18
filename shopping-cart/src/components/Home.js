@@ -5,7 +5,7 @@ import { Products } from './Products';
 import { Banner } from './Banner'
 import { auth, db } from '../config/Config'
 import { collection, getDocs, query, where } from 'firebase/firestore'
-
+// this is the home page component
 export const Home = () => {
     function GetCurrentUser() {
         const [user, setUser] = useState('')

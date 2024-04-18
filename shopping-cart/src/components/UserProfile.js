@@ -8,7 +8,7 @@ export const UserProfile = () => {
   function GetCurrentUser() {
     const [user, setUser] = useState('')
     const userCollectionRef = collection(db, "users")
-
+// this function gets the current user
     useEffect(() => {
         auth.onAuthStateChanged(userlogged=>{
             if(userlogged){

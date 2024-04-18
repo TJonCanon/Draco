@@ -3,7 +3,7 @@ import { Navbar }  from './Navbar'
 import { auth, db } from '../config/Config'
 import { collection, getDocs, query, where } from 'firebase/firestore'
 import { CartCard } from './CartCard'
-
+// establishes connection to firestore database
 export const Cart = () => {
     function GetCurrentUser() {
         const [user, setUser] = useState('')
